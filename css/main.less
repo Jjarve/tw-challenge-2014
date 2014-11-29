@@ -256,6 +256,10 @@ a {
     &:hover {
         text-decoration: underline;
     }
+    
+    .small {
+        font-size: 11px;
+    }
 }
 
 
@@ -534,6 +538,16 @@ body.main {
         background-color: #ffffc5;
         border-bottom: 1px solid #ddd;
         padding: 10px 15px;
+        
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: inherit;
+            margin: -10px;
+            &:hover {
+                background-color: transparent;
+            }
+        }
     }
     
     .message.success {

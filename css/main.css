@@ -99,6 +99,9 @@ a {
 a:hover {
   text-decoration: underline;
 }
+a .small {
+  font-size: 11px;
+}
 .button-sized {
   display: inline-block;
   padding: 9px 15px 9px 15px;
@@ -318,6 +321,17 @@ body.main .message.success {
   background-color: #ffffc5;
   border-bottom: 1px solid #ddd;
   padding: 10px 15px;
+}
+body.main .tx_pending li a,
+body.main .message.success a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  margin: -10px;
+}
+body.main .tx_pending li a:hover,
+body.main .message.success a:hover {
+  background-color: transparent;
 }
 body.main .message.success {
   color: #fff;
