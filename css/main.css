@@ -291,20 +291,21 @@ body.main .rx_list li a:hover,
 body.main .tx_pending li a:hover {
   background-color: #f6f6f6;
 }
-body.main .tx_pending li {
+body.main .tx_pending li,
+body.main .message.success {
   font-size: 11px;
   line-height: 13px;
   background-color: #ffffc5;
   border-bottom: 1px solid #ddd;
   padding: 10px 15px;
 }
-body.main .tx_pending li .cta {
-  display: none;
-  font-size: 9px;
-  position: relative;
-  bottom: -2px;
-  color: #666;
-  font-style: italic;
+body.main .message.success {
+  color: #fff;
+  background-color: #25a730;
+}
+body.main .message.success strong.head {
+  display: block;
+  margin-bottom: 5px;
 }
 body.payment input.amount {
   width: 30%;

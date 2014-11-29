@@ -504,22 +504,23 @@ body.main {
         
     }   // .rx_list
     
-    .tx_pending {
-        li {
-            font-size: 11px;
-            line-height: 13px;
-            background-color: #ffffc5;
-            border-bottom: 1px solid #ddd;
-            padding: 10px 15px;
-            
-            .cta {
-                display: none;
-                font-size: 9px;
-                position: relative;
-                bottom: -2px;
-                color: #666;
-                font-style: italic;
-            }
+    .tx_pending li,
+    .message.success {
+        font-size: 11px;
+        line-height: 13px;
+        background-color: #ffffc5;
+        border-bottom: 1px solid #ddd;
+        padding: 10px 15px;
+    }
+    
+    .message.success {
+        
+        color: #fff;
+        background-color: #25a730;
+        
+        strong.head {
+            display: block;
+            margin-bottom: 5px;
         }
     }
     
