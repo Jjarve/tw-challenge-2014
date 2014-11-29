@@ -15,45 +15,64 @@
 
 <div id="wrapper">
 
-    <div id="header"></div>
-
-    <div id="main">
-    
+    <div id="header">
+        
+        <a href="main.html" class="back">&larr; cancel</a>
         <h1>Make a new payment</h1>
         
-        <a href="main.html">Cancel the payment, go back</a>
+    </div>
+
+    <div id="main">
+        
+        
         
         <form action="payment_2.html">
-            
-            <h3>Send money to:</h3>
-            <input type="text" name="rx_name" value="Barbie D" /><br />
-            <span class="help">The name in the box above should more or less match the recipient's name
-                in their bank – otherwise the transfer may fail!</span>
+        
+            <div class="section">
                 
-            <h3>Notify them via:</h3>
-            <input type="text" name="rx_contact" value="+372 50 123 456" />
-            <span class="help">We'll send them an SMS.</span>
-            
-            <h3>How much do you want to transfer?</h3>
-            <span class="currency">€</span>
-            <input type="text" class="large" name="amount" placeholder="00.00" />
-            
-            <h3>How do you want to pay?</h3>
-            
-            <div class="message no_card_details">
-                <p>We don't have any debit or credit card to make the payment from!</p>
-                <a class="button action" href="#" onclick="
-                    jQuery('.overlay').show();
-                    jQuery('#card_form').show();
-                    return false;
-                ">Add a debit or credit card</a>
-            </div>
-            
-            <div class="card_details" style="display: none;">
-                
-                Visa ending in 1234
+                <h3>Send money to:</h3>
+                <input type="text" name="rx_name" value="Barbie D" /><br />
+                <span class="help">The name in the box above should more or less match the recipient's name
+                    in their bank – otherwise the transfer may fail!</span>
+                    
+                <h3>Notify them via:</h3>
+                <input type="text" name="rx_contact" value="+372 50 123 456" />
+                <span class="help">We'll send them an SMS.</span>
                 
             </div>
+            
+            <div class="section">
+            
+                <h3>How much do you want to transfer?</h3>
+                <span class="currency">€</span>
+                <input type="text" class="large" name="amount" placeholder="00.00" />
+                
+            </div>
+            
+            
+            
+            <div class="section">
+            
+                <h3>How do you want to pay?</h3>
+                
+                <div class="message no_card_details">
+                    <p>We don't have any debit or credit card to make the payment from!</p>
+                    <a class="button action" href="#" onclick="
+                        jQuery('.overlay').show();
+                        jQuery('#card_form').show();
+                        return false;
+                    ">Add a debit or credit card</a>
+                </div>
+            
+                <div class="card_details" style="display: none;">
+                    
+                    Visa ending in 1234, expires 04/16
+                    
+                </div>
+                
+            </div>
+            
+            
             
             <div class="proceed" style="display: none;">
                 <a href="payment_2.html">PAY</a>

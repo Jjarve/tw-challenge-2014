@@ -15,25 +15,32 @@
 
 <div id="wrapper">
 
-    <div id="header"></div>
+    <div id="header">
+        <h1>Get started</h1>
+    </div>
 
     <div id="main">
-    
-        <h1>So you're new to QuickTransfer?</h1>
         
-        <h2>Get started by creating an account:</h2>
-        
-        <form method="post" action="main.html">
+        <div class="section">
             
-            <h3>Your email address or mobile number will be your username</h3>
-            <input type="text" name="username" placeholder="email address or mobile number" /><br />
+            <h2>Get started by creating an account:</h2>
             
-            <h3>Pick a strong password!</h3>
-            <input type="password" name="password" /><br />
+            <form method="post" action="main.html">
+                
+                <h3>Your email or mobile number:</h3>
+                <input type="text" name="username" placeholder="email address or mobile number" /><br />
+                <span class="help">This will be your username that you will use to log in.</span>
+                
+                <h3>Pick a password:</h3>
+                <input type="password" name="password" /><br />
+                <span class="help">Your password should be secure enough to keep your money safe, but simple enough for you to remember.</span>
+                
+                <!-- <input type="submit" value="Sign up!" /> -->
+                <a href="main.html" class="button green">Sign up!</a>
+                
+            </form>
             
-            <input type="submit" value="Sign up!" />
-            
-        </form>
+        </div>
             
     </div>
 
