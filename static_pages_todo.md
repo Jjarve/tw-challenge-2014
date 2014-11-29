@@ -1,6 +1,7 @@
 * front page, login and register, forgot pw
 * forgot password page
 * register: email or phone, password x1
+
 * main page 
    * payment confirmation message
    * pending transfers
@@ -13,3 +14,5 @@
    * no credit card, create new
 
 * add a new credit card
+
+* payment confirmation page (from payment vendor)
