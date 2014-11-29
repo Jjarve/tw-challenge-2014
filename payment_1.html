@@ -32,27 +32,16 @@
                 
                 <h3>Send money to:</h3>
                 <input type="text" name="rx_name" value="Barbie D" /><br />
-                <span class="help">The name in the box above should more or less match the recipient's name
-                    in their bank – otherwise the transfer may fail!</span>
+                <span class="help">Their name should match what their bank has on file.</span>
                     
                 <h3>Notify them via:</h3>
                 <input type="text" name="rx_contact" value="+372 50 123 456" />
-                <span class="help">We'll send them an SMS.</span>
-                
-            </div>
-            
-            <div class="section">
+                <span class="help">We'll send them an SMS to complete the transaction.</span>
             
                 <h3>How much do you want to transfer?</h3>
                 <span class="currency">€</span>
-                <input type="text" class="large" name="amount" placeholder="00.00" />
+                <input type="text" class="large amount" name="amount" placeholder="0.00" />
                 
-            </div>
-            
-            
-            
-            <div class="section">
-            
                 <h3>How do you want to pay?</h3>
                 
                 <div class="message no_card_details">
@@ -75,7 +64,7 @@
             
             
             <div class="proceed" style="display: none;">
-                <a href="payment_2.html">PAY</a>
+                <a href="payment_2.html" class="button green">Authorize the payment</a>
             </div>
     
     </div>
@@ -94,33 +83,45 @@
     
     <ul class="card_types radios">
         <li>
-            <input type="radio" name="visa" />
-            <label for="visa">Visa</label>
+            <input type="radio" id="visadebit" name="card_type" value="visadebit" />
+            <label for="visadebit">Visa debit</label>
         </li>
         <li>
-            <input type="radio" name="mastercard" />
-            <label for="visa">Mastercard</label>
+            <input type="radio" id="visacredit" name="card_type" value="visacredit" />
+            <label for="visacredit">Visa credit</label>
+        </li>
+        <li>
+            <input type="radio" id="mastercard" name="card_type" value="mastercard" />
+            <label for="mastercard">Mastercard</label>
         </li>
     </ul>
     
-    <h4>Card number: (that's the 16 digits on the front of your card)</h4>
+    <h4>Card number: <span>(that's the 16 digits on the front of your card)</span></h4>
     <input type="text" name="card_no" placeholder="•••• •••• •••• ••••" />
     
-    <h4>Account holder name as it appears on your card</h4>
+    <h4>Account holder name <span>(as printed on your card)</span></h4>
     <input type="text" name="cardholder_name" />
     
-    <h4>Expiry date: (mmyy)</h4>
+    <h4>Expiry date: <span>(mmyy)</span></h4>
     <input type="text" name="card_expiry" />
     
     <br /><br />
     
-    <input type="submit" value="Add card" onclick="
+    <!-- <input type="submit" value="Add card" onclick="
         jQuery('#card_form, .overlay').hide(); 
         jQuery('.message.no_card_details').hide();
         jQuery('.card_details').show();
         jQuery('.proceed').show();
         return false;
-    " />
+    " /> -->
+    
+    <a class="button green" onclick="
+        jQuery('#card_form, .overlay').hide(); 
+        jQuery('.message.no_card_details').hide();
+        jQuery('.card_details').show();
+        jQuery('.proceed').show();
+        return false;
+    ">Save card details</a> 
     
 </div>
 

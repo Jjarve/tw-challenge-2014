@@ -205,6 +205,22 @@ h3 {
     // font-weight: normal;
 }
 
+h4 {
+    font-size: 13px;
+    color: @title-blue;
+    text-transform: uppercase;
+    margin-top: 15px;
+    font-weight: normal;
+    
+    span {
+        text-transform: none;
+        font-size: 11px;
+        color: #666;
+        display: block;
+        line-height: 13px;
+    }
+}
+
 .help {
     display: block;
     font-size: 13px;
@@ -226,6 +242,13 @@ input[type="password"] {
     text-align: center;
     margin: 5px 0;
     
+}
+
+
+
+::-webkit-input-placeholder {
+   color: #999;
+   font-style: italic;
 }
 
 a {
@@ -503,6 +526,41 @@ body.main {
 }
 
 
+body.payment {
+    input.amount {
+        width: 30%;
+        display: inline;
+    }
+    
+    .card_types {
+        margin: 15px 0;
+        padding: 0;
+        li {
+            display: inline-block;
+            font-size: 9px;
+            margin-right: 5px;
+            padding: 3px 8px;
+            border: 1px solid #ddd;
+            .rounded-corners();
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    
+    .cvv {
+        width: 15%;
+    }
+    
+    pre {
+        border: 1px solid #ddd;
+        .rounded-corners();
+        background-color: #f6f6f6;
+        padding: 15px 0;
+    }
+}
+
+
 
 body.login {
     
@@ -529,9 +587,9 @@ body.login {
         
         ::-webkit-input-placeholder {
            color: rgba(255, 255, 255, 0.8);
-           font-style: italic;
-        }
+       }
     }
+    
     
     .button {
         font-size: 15px;
@@ -554,13 +612,15 @@ body.login {
 
 #card_form {
     position: absolute;
+    .border-box();
     z-index: 250;
     width: 80%;
     left: 10%;
-    top: 10px;
-    border: 1px solid #ccc;
+    top: 20px;
+    border: 1px solid #666;
+    .rounded-corners();
     background: #fff;
-    padding: 10px;
+    padding: 20px;
 }
 
 .clear {

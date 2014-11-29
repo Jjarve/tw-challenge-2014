@@ -56,6 +56,20 @@ h3 {
   font-size: 15px;
   margin-top: 20px;
 }
+h4 {
+  font-size: 13px;
+  color: #4a80ad;
+  text-transform: uppercase;
+  margin-top: 15px;
+  font-weight: normal;
+}
+h4 span {
+  text-transform: none;
+  font-size: 11px;
+  color: #666;
+  display: block;
+  line-height: 13px;
+}
 .help {
   display: block;
   font-size: 13px;
@@ -74,6 +88,10 @@ input[type="password"] {
   width: 100%;
   text-align: center;
   margin: 5px 0;
+}
+::-webkit-input-placeholder {
+  color: #999;
+  font-style: italic;
 }
 a {
   text-decoration: none;
@@ -288,6 +306,34 @@ body.main .tx_pending li .cta {
   color: #666;
   font-style: italic;
 }
+body.payment input.amount {
+  width: 30%;
+  display: inline;
+}
+body.payment .card_types {
+  margin: 15px 0;
+  padding: 0;
+}
+body.payment .card_types li {
+  display: inline-block;
+  font-size: 9px;
+  margin-right: 5px;
+  padding: 3px 8px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+body.payment .card_types li:last-child {
+  margin-right: 0;
+}
+body.payment .cvv {
+  width: 15%;
+}
+body.payment pre {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background-color: #f6f6f6;
+  padding: 15px 0;
+}
 body.login #header {
   display: none;
 }
@@ -311,7 +357,6 @@ body.login #main input[type="password"] {
 }
 body.login #main ::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.8);
-  font-style: italic;
 }
 body.login .button {
   font-size: 15px;
@@ -328,13 +373,16 @@ body.login .button {
 }
 #card_form {
   position: absolute;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   z-index: 250;
   width: 80%;
   left: 10%;
-  top: 10px;
-  border: 1px solid #ccc;
+  top: 20px;
+  border: 1px solid #666;
+  border-radius: 3px;
   background: #fff;
-  padding: 10px;
+  padding: 20px;
 }
 .clear {
   display: block;

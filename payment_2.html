@@ -11,31 +11,43 @@
     
 </head>
 
-<body class="">
+<body class="payment">
 
 <div id="wrapper">
 
-    <div id="header"></div>
-
-    <div id="main">
-    
+    <div id="header">
+        
+        <a href="main.html" class="back">&larr; back</a>
         <h1>Authorize payment</h1>
         
-        <p>Sending <span class="amount">€10.00</span> to <span class="rx_name">Barbie D</span> (<span class="transfer_desc">Takso ja õlu</span>)</p>
+    </div>
+
+    <div id="main">
         
-        <h3>Payment method</h3>
+        <div class="section">
+        
+            <p>You are sending <strong>€10.00 to Barbie D</strong> <br /><em class="transfer_desc">(Takso ja õlu)</em></p>
+            
+            <h3>Payment method</h3>
 <pre>
 Visa ending in 1234
 belonging to T H Ilves
 Expires 04/16
 </pre>
 
-        <form action="main.html#confirmed">
+            <form action="main.html#confirmed">
+                
+                <h4>Your CVV number <span>(the 3 digits from the back of your card)</span></h4>
+                <input type="text" class="cvv" placeholder="•••" />
+                <!-- <input type="submit" value="Authorize" /> -->
+                
+                <br /><br />
+                
+                <a class="button green" href="main.html">Finalize payment! &rarr;</a>
+                
+            </form>
             
-            <input type="text" class="cvv" placeholder="•••" />
-            <input type="submit" value="Authorize" />
-            
-        </form>
+        </div>
     
     </div>
 
