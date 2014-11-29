@@ -30,6 +30,7 @@ body {
   z-index: 100;
   background-color: #fcfcfc;
   background-color: #fff;
+  text-align: center;
 }
 h1,
 h2,
@@ -47,11 +48,18 @@ h1 {
 h2 {
   font-size: 17px;
   text-align: center;
+  margin-top: 20px;
   color: #4a80ad;
 }
 h3 {
   color: #4a80ad;
   font-size: 15px;
+  margin-top: 20px;
+}
+.help {
+  display: block;
+  font-size: 13px;
+  color: #666;
 }
 input[type="text"],
 input[type="password"] {
@@ -64,6 +72,7 @@ input[type="password"] {
   line-height: 200%;
   padding: 5px 10px;
   width: 100%;
+  text-align: center;
   margin: 5px 0;
 }
 a {
@@ -83,7 +92,7 @@ a:hover {
 .button-sized.small {
   font-size: 12px;
   line-height: 12px;
-  padding: 6px 10px 5px 10px;
+  padding: 10px 10px 8px 10px;
 }
 .button-sized.small [class^="icon-"] {
   left: -3px;
@@ -107,7 +116,7 @@ a:hover {
 .button.small {
   font-size: 12px;
   line-height: 12px;
-  padding: 6px 10px 5px 10px;
+  padding: 10px 10px 8px 10px;
 }
 .button.small [class^="icon-"] {
   left: -3px;
@@ -222,32 +231,62 @@ a:hover {
 }
 #wrapper #main .section {
   display: block;
-  padding: 10px 15px;
+  padding: 10px 30px;
   border-bottom: 1px solid #ddd;
 }
-body.main input[name="rx_contact"] {
-  width: 80%;
+#wrapper #main .section:last-child {
+  border-bottom: none;
 }
-body.main .rx_list {
+body.main input[name="rx_contact"] {
+  width: 70%;
+}
+body.main .pay_new {
+  width: 20%;
+  margin-left: 5%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 22px;
+}
+body.main .rx_list,
+body.main .tx_pending {
   list-style-type: none;
   margin: 0 -10px;
   padding: 0;
 }
-body.main .rx_list li {
+body.main .rx_list li,
+body.main .tx_pending li {
   display: block;
   margin: 0;
   padding: 0;
   border-bottom: 1px solid #ddd;
 }
-body.main .rx_list li:last-child {
+body.main .rx_list li.rx_list:last-child,
+body.main .tx_pending li.rx_list:last-child {
   border-bottom: none;
 }
-body.main .rx_list li a {
+body.main .rx_list li a,
+body.main .tx_pending li a {
   display: block;
   padding: 10px 10px;
 }
-body.main .rx_list li a:hover {
+body.main .rx_list li a:hover,
+body.main .tx_pending li a:hover {
   background-color: #f6f6f6;
+}
+body.main .tx_pending li {
+  font-size: 11px;
+  line-height: 13px;
+  background-color: #ffffc5;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 15px;
+}
+body.main .tx_pending li .cta {
+  display: none;
+  font-size: 9px;
+  position: relative;
+  bottom: -2px;
+  color: #666;
+  font-style: italic;
 }
 body.login #header {
   display: none;
@@ -296,4 +335,11 @@ body.login .button {
   border: 1px solid #ccc;
   background: #fff;
   padding: 10px;
+}
+.clear {
+  display: block;
+  width: 100%;
+  height: 1px;
+  height: 0;
+  clear: both;
 }
