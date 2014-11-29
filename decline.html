@@ -18,34 +18,36 @@
     <div id="header"></div>
 
     <div id="main">
+        
+        <div class="section" style="max-width: 400px; margin: 0 auto;">
     
-        <p>Hi,</p>
+            <p>Hi,</p>
 
-	<p>The payment initated by Taavi Taavi on mm/dd/yyyy:<br />
-	Sender: Taavi Taavi<br />
-	Recipient&rsquo;s name: [______]<br />
-	Recipient&rsquo;s telephone no. or e-mail: []<br />
-	Payment: [10] &euro;&nbsp;<br />
-	Description: [Takso ja &otilde;lled]</p>
+    	<!-- <p>The payment initated by Taavi Taavi on mm/dd/yyyy:<br />
+    	Sender: Taavi Taavi<br />
+    	Recipient&rsquo;s name: [______]<br />
+    	Recipient&rsquo;s telephone no. or e-mail: []<br />
+    	Payment: [10] &euro;&nbsp;<br />
+    	Description: [Takso ja &otilde;lled]</p> -->
 
-	<form action="learn_more.html" method="fill">
-		<p>We understand you wish to decline Taavi Taavi&rsquo;s payment. What is your reason?&nbsp;
-		</p>
-		<input type="checkbox" name="reason" value="Wrong receipient name">Wrong receipient name
-		<br>
-		<input type="checkbox" name="reason" value="Not the intended recipient">Not the intended recipient
-		<br>
-		<input type="checkbox" name="reason" value="Security concerns">Security concerns
-		<br>
-		<input type="checkbox" name="reason" value="Other">Other
-		<br>
-		<br>
-		<input type="submit" class="button submit" value="Submit" />
-	</form>
-	<form action="receive_landing.html" method="fill">
-		<p>In case you changed your mind about declining the transaction:</p>
-		<input type="submit" class="button submit" value="Return" />
-	</form>
+    	<form action="thanks.html" method="fill">
+    		<p>We understand you wish to decline Taavi Taavi&rsquo;s payment. What is your reason?&nbsp;
+    		</p>
+    		<input type="checkbox" name="reason" value="Wrong receipient name">Wrong receipient name
+    		<br>
+    		<input type="checkbox" name="reason" value="Not the intended recipient">Not the intended recipient
+    		<br>
+    		<input type="checkbox" name="reason" value="Security concerns">Security concerns
+    		<br>
+    		<input type="checkbox" name="reason" value="Other">Other (please specify)
+            <input type="text" />
+    		<br>
+    		<br>
+    		<input type="submit" class="button submit" value="Submit" />
+    	</form>
+    	<a class="small" href="receive_landing.html">or go back to see transaction details</a>
+        
+    </div>
     
 
     </div>

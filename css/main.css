@@ -402,3 +402,34 @@ body.login .button {
   height: 0;
   clear: both;
 }
+.receive_landing table,
+.decline table {
+  width: 400px;
+  margin: 40px 0;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.receive_landing table th,
+.decline table th,
+.receive_landing table td,
+.decline table td {
+  padding: 10px;
+  margin: 0;
+  border: 1px solid #ddd;
+}
+.receive_landing table th,
+.decline table th {
+  text-align: right;
+  background-color: #f6f6f6;
+}
+.receive_landing table th span,
+.decline table th span {
+  font-size: 9px;
+  font-weight: normal;
+}
+.receive_landing .button,
+.decline .button {
+  max-width: 250px;
+  margin: 15px auto;
+  display: block;
+}
