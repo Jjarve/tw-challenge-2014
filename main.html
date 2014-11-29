@@ -6,6 +6,7 @@
     
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/app.js"></script>
     
     <meta charset="utf-8">
     
@@ -22,16 +23,17 @@
     </div>
 
     <div id="main">
+
+
     
     
-    
-        <div class="section message success reg_success" id="payment_confirmed">
+        <div class="section message success reg_success" id="registration_confirmed">
             
             <strong>Thanks for signing up!</strong><br />
             
             Pick a recipient to get started!
             
-            <a href="#" onclick="jQuery('.message#payment_confirmed').hide(); return false;" class="dismiss">dismiss</a>
+            <a href="#" onclick="jQuery('.message#registration_confirmed').hide(); return false;" class="dismiss">dismiss</a>
             
         </div>
         
@@ -52,7 +54,7 @@
             
         <!-- <h3>Pending payments:</h3> -->
         
-        <ul class="tx_pending">
+        <ul class="tx_pending" id="tx_pending">
             <li>
                 <a href="#">
                     In progress: <strong>€10.00</strong> to <strong>Anna</strong> (waiting for Anna to accept)<br />
@@ -63,14 +65,29 @@
             </li>
         </ul>
         
-        
+        <script>
+        switch(getParameterByName("from")) {
+        case "0":
+        console.log("0")
+            $('#tx_pending').hide();
+        break;
+        case "1":
+        console.log("1")
+            $('.message#registration_confirmed').hide();
+        break;
+        default:
+        console.log("def")
+            $('.message').hide();
+            $('#tx_pending').hide();
+        }
+        </script>
         
         
         <div class="section pay_someone_new">
     
             <h2>Pay someone you've met:</h2>
             
-            <form action="payment_1.html" method="post">
+            <form action="payment_1.html" method="GET">
                 
                 <input type="text" name="rx_name" placeholder="Recipient's name (as it appears in their bank)" />
                 <input type="text" name="rx_contact" placeholder="Their phone number or email" />
