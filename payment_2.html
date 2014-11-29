@@ -35,15 +35,17 @@ belonging to T H Ilves
 Expires 04/16
 </pre>
 
-            <form action="main.html#confirmed">
+            <form action="main.html#confirmed" method = "GET">
                 
                 <h4>Your CVV number <span>(the 3 digits from the back of your card)</span></h4>
                 <input type="text" class="cvv" placeholder="•••" />
                 <!-- <input type="submit" value="Authorize" /> -->
                 
+
                 <br /><br />
-                
-                <a class="button green" href="main.html">Finalize payment! &rarr;</a>
+                                <input type="hidden" name="from" value="1"/>
+                <input type="submit" class="button green" value="Finalize payment! &rarr;"/>
+
                 
             </form>
             
