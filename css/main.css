@@ -250,7 +250,6 @@ a:hover {
 #wrapper #main .section {
   display: block;
   padding: 10px 30px;
-  border-bottom: 1px solid #ddd;
 }
 #wrapper #main .section:last-child {
   border-bottom: none;
@@ -290,6 +289,16 @@ body.main .tx_pending li a {
 body.main .rx_list li a:hover,
 body.main .tx_pending li a:hover {
   background-color: #f6f6f6;
+}
+body.main .rx_list li .note,
+body.main .tx_pending li .note {
+  display: block;
+  font-size: 11px;
+  color: #999;
+}
+body.main .rx_list li.recent,
+body.main .tx_pending li.recent {
+  display: none;
 }
 body.main .tx_pending li,
 body.main .message.success {
