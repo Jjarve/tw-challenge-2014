@@ -25,7 +25,7 @@
             
             <h2>Get started by creating an account:</h2>
             
-            <form method="post" action="main.html">
+            <form method="GET" action="main.html">
                 
                 <h3>Your email or mobile number:</h3>
                 <input type="text" name="username" placeholder="email address or mobile number" /><br />
@@ -34,9 +34,10 @@
                 <h3>Pick a password:</h3>
                 <input type="password" name="password" /><br />
                 <span class="help">Your password should be secure enough to keep your money safe, but simple enough for you to remember.</span>
+                <input type="hidden" name="from" value = "0"/ >
                 
                 <!-- <input type="submit" value="Sign up!" /> -->
-                <a href="main.html" class="button green">Sign up!</a>
+                <input type="submit" href="main.html" class="button green" value ="Sign up!"></input>
                 
             </form>
             
