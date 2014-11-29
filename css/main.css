@@ -249,6 +249,12 @@ a:hover {
 #wrapper #header a.back {
   margin-right: 15px;
 }
+#wrapper #header a.logout {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  z-index: 190;
+}
 #wrapper #header a:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
@@ -348,37 +354,6 @@ body.payment pre {
   border-radius: 3px;
   background-color: #f6f6f6;
   padding: 15px 0;
-}
-body.login h1,
-body.login h2,
-body.login h3,
-body.login h4 {
-  color: #fff;
-  font-weight: normal;
-}
-body.login #header {
-  display: none;
-}
-body.login #main {
-  text-align: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 300;
-  background: #eeeeee;
-  background-image: -webkit-linear-gradient(top, #7cb6e7, #5785ac);
-  background-image: linear-gradient(to bottom, #7cb6e7, #5785ac);
-  height: 100%;
-}
-body.login #main input[type="text"],
-body.login #main input[type="password"] {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.3);
-  color: #ffffff;
-  text-align: center;
-}
-body.login #main ::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.8);
 }
 body.login .button {
   font-size: 15px;

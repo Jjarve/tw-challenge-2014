@@ -17,13 +17,27 @@
 
     <div id="header">
         <h1>Hey, Taavi!</h1>
+        
+        <a href="index.html" class="logout">&uarr; log out</a>
     </div>
 
     <div id="main">
+    
+    
+    
+        <div class="section message success reg_success" id="payment_confirmed">
+            
+            <strong>Thanks for signing up!</strong><br />
+            
+            Pick a recipient to get started!
+            
+            <a href="#" onclick="jQuery('.message#payment_confirmed').hide(); return false;" class="dismiss">dismiss</a>
+            
+        </div>
         
         
         
-        <div class="section message success" id="payment_confirmed">
+        <div class="section message success payment_success" id="payment_confirmed">
             
             <strong>Payment confirmed!</strong><br />
             
@@ -137,7 +151,7 @@
     
         
         <script type="text/javascript">
-            jQuery('.section.message').hide();
+            jQuery('.payment_success').hide();
             jQuery('.pay_someone_new').hide();
             jQuery('.pay_someone_existing').hide();
         </script>
