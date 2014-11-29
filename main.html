@@ -70,10 +70,12 @@
         case "0":
         console.log("0")
             $('#tx_pending').hide();
+            $('.message#payment_confirmed').hide();
         break;
         case "1":
         console.log("1")
             $('.message#registration_confirmed').hide();
+                        $('#tx_pending').hide();
         break;
         default:
         console.log("def")
@@ -170,9 +172,9 @@
     
         
         <script type="text/javascript">
-            jQuery('.payment_success').hide();
-            jQuery('.reg_success').hide();
-            jQuery('.tx_pending').hide()
+            //jQuery('.payment_success').hide();
+            //jQuery('.reg_success').hide();
+            //jQuery('.tx_pending').hide()
             jQuery('.pay_someone_new').hide();
             jQuery('.pay_someone_existing').hide();
         </script>
