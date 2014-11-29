@@ -405,6 +405,12 @@ a {
 
 #wrapper {
     
+    #header,
+    #main,
+    #footer {
+        width: 100%;
+    }
+    
     #header {
         
         a {
@@ -485,7 +491,7 @@ body.main {
             display: block;
             margin: 0;
             padding: 0;
-            border-bottom: 1px solid #ddd;
+            border-bottom: 1px dotted #ccc;
             
             &.rx_list:last-child {
                 border-bottom: none;
@@ -574,6 +580,11 @@ body.payment {
 
 
 body.login {
+    
+    h1, h2, h3, h4 {
+        color: #fff;
+        font-weight: normal;
+    }
     
     #header {
         display: none;

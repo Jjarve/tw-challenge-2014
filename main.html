@@ -50,9 +50,9 @@
         
         
         
-        <div class="section">
+        <div class="section pay_someone_new">
     
-            <h2>Pay someone you've just met:</h2>
+            <h2>Pay someone you've met:</h2>
             
             <form action="payment_1.html" method="post">
                 
@@ -64,14 +64,18 @@
                 
             </form>
             
+            <a class="button" href="#" onclick="jQuery('.pay_someone_existing').show(); jQuery('.pay_someone_new').hide(); return false;">Show my contacts list instead</a>
+            
         </div>
         
         
         
         
-        <div class="section">
+        <div class="section pay_someone_existing">
             
             <h2>Or pay someone you already know:</h2>
+            
+            <a class="button" href="#" onclick="jQuery('.pay_someone_existing').hide(); jQuery('.pay_someone_new').show(); return false;">Pay someone else instead</a>
             
             <ul class="rx_list">
                 
@@ -118,8 +122,25 @@
             </ul>
     
     </div>
+    
+    
+    <div class="section who_to_pay">
+        
+        <h3>Who do you want to pay?</h3>
+        
+        <a class="button large" onclick="jQuery('.who_to_pay').hide(); jQuery('.pay_someone_new').show(); return false;" href="#">Somebody new</a>
+        
+        <a class="button large" onclick="jQuery('.who_to_pay').hide(); jQuery('.pay_someone_existing').show(); return false;" href="#">Somebody from my phonebook</a>
 
     <div id="footer"></div>
+    
+    
+        
+        <script type="text/javascript">
+            jQuery('.section.message').hide();
+            jQuery('.pay_someone_new').hide();
+            jQuery('.pay_someone_existing').hide();
+        </script>
 
 </div>
 

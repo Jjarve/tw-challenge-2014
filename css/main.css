@@ -220,6 +220,11 @@ a:hover {
   padding-left: 10px;
   padding-right: 0;
 }
+#wrapper #header,
+#wrapper #main,
+#wrapper #footer {
+  width: 100%;
+}
 #wrapper #header {
   display: block;
   width: 100%;
@@ -275,7 +280,7 @@ body.main .tx_pending li {
   display: block;
   margin: 0;
   padding: 0;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px dotted #ccc;
 }
 body.main .rx_list li.rx_list:last-child,
 body.main .tx_pending li.rx_list:last-child {
@@ -343,6 +348,13 @@ body.payment pre {
   border-radius: 3px;
   background-color: #f6f6f6;
   padding: 15px 0;
+}
+body.login h1,
+body.login h2,
+body.login h3,
+body.login h4 {
+  color: #fff;
+  font-weight: normal;
 }
 body.login #header {
   display: none;
