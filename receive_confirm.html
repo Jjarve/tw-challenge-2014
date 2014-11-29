@@ -11,7 +11,7 @@
     
 </head>
 
-<body class="">
+<body class="receive_confirm">
 
 <div id="wrapper">
 
@@ -19,7 +19,32 @@
 
     <div id="main">
     
-        <h1>Hello world!</h1>
+        <h2>Just one more step!</h2>
+
+         <div class="section">
+        
+            <h3>We would like to know your full name:</h3>
+            
+            <form action="receive_finish.html" method="fill">
+                
+                <input type="iban" name="IBAN" />
+                <h3>and bank account number:</h3>
+                <input type="name" name="full name" />
+                <h3>to finalize the transaction.</h3>
+                
+                <h4>Transaction details:</h4>
+                <p>From: Taavi Demomees</p>
+                <p>Amount: 10&euro;</p>
+                <p>Explanation: "takso ja õlled"</p>
+
+				<input type="checkbox" name="remember" value="Bike">Remember my account number for future transactions
+				<br>
+				<br>
+                <input type="submit" class="button submit" value="Confirm" />
+                
+            </form>
+            
+        </div>
     
     </div>
 
