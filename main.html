@@ -17,13 +17,27 @@
 
     <div id="header">
         <h1>Hey, Taavi!</h1>
+        
+        <a href="index.html" class="logout">&uarr; log out</a>
     </div>
 
     <div id="main">
+    
+    
+    
+        <div class="section message success reg_success" id="payment_confirmed">
+            
+            <strong>Thanks for signing up!</strong><br />
+            
+            Pick a recipient to get started!
+            
+            <a href="#" onclick="jQuery('.message#payment_confirmed').hide(); return false;" class="dismiss">dismiss</a>
+            
+        </div>
         
         
         
-        <div class="section message success" id="payment_confirmed">
+        <div class="section message success payment_success" id="payment_confirmed">
             
             <strong>Payment confirmed!</strong><br />
             
@@ -40,8 +54,10 @@
         
         <ul class="tx_pending">
             <li>
-                In progress: <strong>€10.00</strong> to <strong>Anna</strong> (waiting for Anna to accept)<br />
-                <span class="cta">tap for details</span>
+                <a href="#">
+                    In progress: <strong>€10.00</strong> to <strong>Anna</strong> (waiting for Anna to accept)<br />
+                    <span class="cta">tap for details</span>
+                </a>
                 
                 <div class="clear"></div>
             </li>
@@ -50,9 +66,9 @@
         
         
         
-        <div class="section">
+        <div class="section pay_someone_new">
     
-            <h2>Pay someone you've just met:</h2>
+            <h2>Pay someone you've met:</h2>
             
             <form action="payment_1.html" method="post">
                 
@@ -64,14 +80,18 @@
                 
             </form>
             
+            <a class="button" href="#" onclick="jQuery('.pay_someone_existing').show(); jQuery('.pay_someone_new').hide(); return false;">Show my contacts list instead</a>
+            
         </div>
         
         
         
         
-        <div class="section">
+        <div class="section pay_someone_existing">
             
             <h2>Or pay someone you already know:</h2>
+            
+            <a class="button" href="#" onclick="jQuery('.pay_someone_existing').hide(); jQuery('.pay_someone_new').show(); return false;">Pay someone else instead</a>
             
             <ul class="rx_list">
                 
@@ -118,8 +138,26 @@
             </ul>
     
     </div>
+    
+    
+    <div class="section who_to_pay">
+        
+        <h3>Who do you want to pay?</h3>
+        
+        <a class="button large" onclick="jQuery('.who_to_pay').hide(); jQuery('.pay_someone_new').show(); return false;" href="#">Somebody new</a>
+        
+        <a class="button large" onclick="jQuery('.who_to_pay').hide(); jQuery('.pay_someone_existing').show(); return false;" href="#">Somebody from my phonebook</a>
 
     <div id="footer"></div>
+    
+    
+        
+        <script type="text/javascript">
+            jQuery('.payment_success').hide();
+            // jQuery('.reg_success').hide();
+            jQuery('.pay_someone_new').hide();
+            jQuery('.pay_someone_existing').hide();
+        </script>
 
 </div>
 

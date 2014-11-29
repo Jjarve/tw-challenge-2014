@@ -99,6 +99,9 @@ a {
 a:hover {
   text-decoration: underline;
 }
+a .small {
+  font-size: 11px;
+}
 .button-sized {
   display: inline-block;
   padding: 9px 15px 9px 15px;
@@ -220,6 +223,11 @@ a:hover {
   padding-left: 10px;
   padding-right: 0;
 }
+#wrapper #header,
+#wrapper #main,
+#wrapper #footer {
+  width: 100%;
+}
 #wrapper #header {
   display: block;
   width: 100%;
@@ -243,6 +251,12 @@ a:hover {
 }
 #wrapper #header a.back {
   margin-right: 15px;
+}
+#wrapper #header a.logout {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  z-index: 190;
 }
 #wrapper #header a:hover {
   background-color: rgba(0, 0, 0, 0.3);
@@ -275,7 +289,7 @@ body.main .tx_pending li {
   display: block;
   margin: 0;
   padding: 0;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px dotted #ccc;
 }
 body.main .rx_list li.rx_list:last-child,
 body.main .tx_pending li.rx_list:last-child {
@@ -307,6 +321,17 @@ body.main .message.success {
   background-color: #ffffc5;
   border-bottom: 1px solid #ddd;
   padding: 10px 15px;
+}
+body.main .tx_pending li a,
+body.main .message.success a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  margin: -10px;
+}
+body.main .tx_pending li a:hover,
+body.main .message.success a:hover {
+  background-color: transparent;
 }
 body.main .message.success {
   color: #fff;
@@ -343,30 +368,6 @@ body.payment pre {
   border-radius: 3px;
   background-color: #f6f6f6;
   padding: 15px 0;
-}
-body.login #header {
-  display: none;
-}
-body.login #main {
-  text-align: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 300;
-  background: #eeeeee;
-  background-image: -webkit-linear-gradient(top, #7cb6e7, #5785ac);
-  background-image: linear-gradient(to bottom, #7cb6e7, #5785ac);
-  height: 100%;
-}
-body.login #main input[type="text"],
-body.login #main input[type="password"] {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.3);
-  color: #ffffff;
-  text-align: center;
-}
-body.login #main ::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.8);
 }
 body.login .button {
   font-size: 15px;
