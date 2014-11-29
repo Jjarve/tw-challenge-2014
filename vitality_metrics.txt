@@ -11,3 +11,5 @@ Metrics:
 5)   What percentage of non-client money recipients go to QuickTransfer's webpage? What percentage of those then register an account?
 
 6)   How many clients would recommend it to their friends?
+
+7)   How many people decline receipt of payments for "security concerns"? 
