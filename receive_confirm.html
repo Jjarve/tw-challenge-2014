@@ -15,37 +15,36 @@
 
 <div id="wrapper">
 
-    <div id="header"></div>
+    <div id="header">
+        <h1>QuickTransfer</h1>
+    </div>
 
     <div id="main">
-    
-        <h3>Just one more step!</h3>
-
-         <div class="section">
         
-            <p>Please give us your full name</p>
-            
-            <form action="receive_finish.html" method="fill">
-                
-                <input type="iban" name="IBAN" />
-                <p>and bank account number</p>
-                <input type="name" name="full name" />
-                <p>which will be used by QuickTransfer&trade; to complete the transfer.</p>
-                <p>Unless you wish us to remember your banking details for future payments processed by QuickTransfer™, all information shall be deleted after the payment has been processed.</p>
-                
-                <h4>Transaction details:</h4>
-                <p>From: Taavi Demomees</p>
-                <p>Amount: 10&euro;</p>
-                <p>Explanation: "takso ja õlled"</p>
+        <div class="section" style="max-width: 400px; margin: 0 auto;">
+    
+            <h2>Just one more step!</h2>
 
-				<input type="checkbox" name="remember" value="Bike">Remember my account number for future transactions
-				<br>
-				<br>
-                <input type="submit" class="button submit" value="Confirm details" />
-                
-            </form>
+             <div class="section">
             
-        </div>
+                
+                
+                <h4>Please give us your full name:</h4>
+                <input type="text" name="" />
+                
+                <h4>and bank account number</h4>
+                <input type="text" name="" />
+                
+                <p>Unless you choose to create an account with QuickTransfer, all information will be deleted after the payment has been processed.</p>
+                
+                <p>Confirm to receive a payment of <strong>€10.00 from Taavi Demomees</strong> ("takso ja õlled")</p>
+                
+                <a class="button green submit" href="receive_finish.html">Confirm details to receive transfer</a>
+                    
+                
+            </div>
+            
+        </div>  <!-- .section -->
     
     </div>
 
