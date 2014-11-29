@@ -21,6 +21,8 @@
     
         <h1>Make a new payment</h1>
         
+        <a href="main.html">Cancel the payment, go back</a>
+        
         <form action="payment_2.html">
             
             <h3>Send money to:</h3>
@@ -51,6 +53,10 @@
                 
                 Visa ending in 1234
                 
+            </div>
+            
+            <div class="proceed" style="display: none;">
+                <a href="payment_2.html">PAY</a>
             </div>
     
     </div>
@@ -93,6 +99,7 @@
         jQuery('#card_form, .overlay').hide(); 
         jQuery('.message.no_card_details').hide();
         jQuery('.card_details').show();
+        jQuery('.proceed').show();
         return false;
     " />
     
