@@ -1,0 +1,89 @@
+SMS/E-maili sisu
+
+Hi _______,
+
+Taavi Taavi wants to send you [10] € via QuickTransfer™. His/her comment: “[takso ja õlled]”. 
+
+To receive your money, please follow this link: _________. 
+
+
+
+Landing page
+
+Hi _______,
+
+Taavi Taavi wants to send you [10] € via QuickTransfer™. QuickTransfer™ is an FSA approved financial service that enables its users fast and safe money transfer. 
+
+Payment initated by Taavi Taavi on mm/dd/yyyy:
+Sender: Taavi Taavi
+Recipient’s name: [______]
+Recipient’s telephone no. or e-mail: []
+Payment: [10] € 
+Description: [Takso ja õlled]
+
+To complete the transfer, QuickTransfer™ needs your banking details. All the provided information is considered as confidential and will be safeguarded by appropriate measures. Unless stated otherwise, all information will be deleted after the payment has been processed. 
+
+PROVIDE DETAILS AND ACCEPT TRANSFER
+DECLINE
+
+Learn more 
+
+Security notice! The weblink is SSL and DNSSEC encrypted. 
+
+
+
+“Jah ma tahan raha saada” leht
+
+Reciept of payment: 
+from: Taavi Taavi 
+Payment: [10] € 
+Description: [Takso ja õlled]
+
+Please give us your bank account number and full name, which will be used by QuickTransfer™ to complete the transfer. Unless you wish us to remember your banking details for future payments processed by QuickTransfer™, all information shall be deleted after the payment has been processed. 
+
+IBAN
+NAME
+
+Remember my bank account details with QuickTransfer™
+
+CONFIRM PAYMENT
+
+
+
+
+“Heaks kiidetud” leht
+Thank you! 
+
+QuickTransfer™ will now transfer money into your account. It usually takes 2-3 banking days for the processing of transfer orders inside the EU. 
+
+Send a short message to Taavi Taavi? 
+
+Text box: Thanks Taavi, you’re the best! xoxo
+
+It only took Taavi 2 minutes to pay you money. If you also want to send money to people you know in a quick and safe manner, join the growing community of QuickTransfer™! Visit us at www.quicktransfer.com or download the QuickTransfer™ app:
+
+App Store
+Google Play
+
+
+
+
+“Ei ma ei taha seda raha saada”
+Hi,
+
+The payment initated by Taavi Taavi on mm/dd/yyyy:
+Sender: Taavi Taavi
+Recipient’s name: [______]
+Recipient’s telephone no. or e-mail: []
+Payment: [10] € 
+Description: [Takso ja õlled]
+
+We understand you wish to decline Taavi Taavi’s payment. What is your reason? 
+Wrong recipient name 
+Not the intended recipient
+Security concerns
+Other
+
+
+
+
