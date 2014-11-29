@@ -1,0 +1,13 @@
+Metrics:
+
+1)   Marketing on webpages that offer financial services. E.g a promotional banner for QuickTransfer – “you can now transfer money to your friend without knowing his bank details”. The metric is the number of clicks on the banner compared to the total number of visitors on the webpage and other possible banners.
+
+2)   What percentage of QuickTransfer webpage visitors (or the people who download the app) register an account (excl. logins)?
+
+3)   What percentage of QuickTransfer's registered clients transfer money?
+
+4)   Feedback after succesful payment – how satisfied were you with QuickTransfer? 1-5 “stars”. Possibility of giving additional feedback.
+
+5)   What percentage of non-client money recipients go to QuickTransfer's webpage? What percentage of those then register an account?
+
+6)   How many clients would recommend it to their friends?
