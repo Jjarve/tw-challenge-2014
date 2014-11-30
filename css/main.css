@@ -89,6 +89,9 @@ textarea {
   text-align: center;
   margin: 5px 0;
 }
+.dismiss {
+  padding-left: 20px;
+}
 ::-webkit-input-placeholder {
   color: #999;
   font-style: italic;
